@@ -1,6 +1,6 @@
 The transformation of my dumb home trainer to a smart Zwift trainer
 
-Contents {#contents .TOCHeading}
+Contents 
 ========
 
 [Part 1: The start of a journey 1](#part-1-the-start-of-a-journey)
