@@ -21,7 +21,9 @@ but one day around June during the first big Corona wave that hit Europe
 last year I received a parcel from my friend Luca from Italy whom I met
 during various CTF events where we competed in.
 
-![](.//media/image1.jpeg)The parcel contained a microcontroller board. A
+![](.//media/image1.jpeg)
+
+The parcel contained a microcontroller board. A
 nRF52 DK (
 https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52-DK)
 from Nordic Semiconductor which is equipped with a nRF52382 ARM Cortex
@@ -82,7 +84,9 @@ Bluetooth Low Energy and my ear pods for hearing music but what I learnt
 was that it was actually not magic what was happening there, and one
 could basically write cool applications using Bluetooth.
 
-![](.//media/image2.jpeg)After these first successful baby steps with
+![](.//media/image2.jpeg)
+
+After these first successful baby steps with
 that new platform, it was then that I remembered that I had plans to
 replace my old cheesy home trainer bike I bought at a local discounter
 some years ago with a cool "trainer" which everyone seems to be using
@@ -118,7 +122,9 @@ integrated magnet brakes and all kind of technical finesse but also the
 cheap variant where you just have a roll pressed against your tire to
 simulate the resistance that were ridiculously hard to get.
 
-![](.//media/image4.jpeg)It was not until Christmas until the situation
+![](.//media/image4.jpeg)
+
+It was not until Christmas until the situation
 improved and stores were restocked slowly. These smart trainers are
 connected via Bluetooth or ANT+ with the smartphone apps and using those
 apps you can then control the devices by setting the difficulty level,
@@ -138,8 +144,9 @@ just displayed them on the cheap mounted LCD display. The trainer was
 about 5 years old and back then nobody seemed to care about those
 features unless you were cycling on a professional basis.
 
-But also for those not ![](.//media/image5.jpeg)equipped with the latest
-and greatest in sports technology, the vendors of those apps have
+![](.//media/image5.jpeg)
+
+But also for those not equipped with the latest and greatest in sports technology, the vendors of those apps have
 something to offer to enable you to use (i.e. pay for) their services.
 You can attach a cadence and speed sensor to your bike (actually two
 sensors: one to the pedal crank and one to the wheel hub) so you can at
