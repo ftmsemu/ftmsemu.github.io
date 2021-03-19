@@ -1,4 +1,4 @@
-The transformation of my dumb home trainer to a smart Zwift trainer
+== The transformation of my dumb home trainer to a smart Zwift trainer ==
 
 # Contents
 
