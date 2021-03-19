@@ -111,7 +111,9 @@ Innsbruck. That was indeed promising much more fun, diversion and
 motivation than just pedaling away on my own in our top floor sleeping
 room while watching some TV series.
 
-![](.//media/image3.jpeg)Though those hardware devices are definitely no
+![](.//media/image3.jpeg)
+
+Though those hardware devices are definitely no
 cheap invest and you will need to have an accompanying (racing) bike it
 turned out it was easier said than done as all these kind of products
 had been sold out and were on back order for MONTHS. So even if I had a
@@ -277,10 +279,10 @@ was meant to be fixed to the back of the driver's seat for the
 passengers in the fond and I worked from there to customize it a little
 bit for the measurements I had.
 
+![](.//media/image6.jpeg)![](.//media/image7.jpeg)
+
 Luckily, the original designer I got in contact with agreed to help me
-with my endeavor and so I
-![](.//media/image6.jpeg)![](.//media/image7.jpeg)got multiple designs
-from which I could choose the best fitting that I then printed. My main
+with my endeavor and so I got multiple designs from which I could choose the best fitting that I then printed. My main
 concern was that the overall structure was too heavy so the iPad might
 not be put there safely. I bought some M8 metal rods on eBay and some
 clamps that I fixed to my handlebar. The tablet holder could be threaded
@@ -678,8 +680,9 @@ Once processed I add the calls to calculate the power from the cadence
 data which I received and add the resulting Watts numbers to the event
 along with the already existing data of CSCS (cadence and speed).
 
-![](.//media/image13.png)At that point I were not sure what the best
-approach was, and I opted for actually duplicating the code of the
+![](.//media/image13.png)
+
+At that point I were not sure what the best approach was, and I opted for actually duplicating the code of the
 calculation of the raw cadence and speed values from the CSCS module to
 the CPS. The reasoning was: "Ok, maybe I want to have a pure CPS service
 later, without being dependent on the pre-calculations done in CSCS?".
@@ -726,7 +729,7 @@ What does that mean? If you do not debounce the signal, what will happen
 when you press the button and connect it to GND (or TTL high) and look
 at it with an oscilloscope or a logic analyzer.
 
-![](.//media/image15.png)You might think that once the circuit is closed
+You might think that once the circuit is closed
 (or opened for that matter), the signal will just transition from Low to
 High or from High to Low. In the end, after few milli-seconds, this is
 indeed what will have happened. But until that state is stable, you will
@@ -738,7 +741,7 @@ peaks and summits all the time until they find a position where they can
 finally align next to each other. On a oscilloscope it might look like
 this:
 
-\[1\]
+![](.//media/image15.png)
 
 The problem is that for a human these bouncing states are not even
 noticeable timewise but for a microcontroller they seem to take an
@@ -760,8 +763,9 @@ This was very important to me\!
 
 Why? Because of this:
 
-![](.//media/image16.jpeg)I already mentioned my cheesy cheap cadence
-sensor I had at first, right? Well, I did not throw it into the trash
+![](.//media/image16.jpeg)
+
+I already mentioned my cheesy cheap cadence sensor I had at first, right? Well, I did not throw it into the trash
 but decided to give it another chance. I did not want to remove and
 reattach the good sensor from the bike every time when I was trying
 something out, so I used the cheap sensor on my desk.
@@ -827,8 +831,9 @@ take up on this problem and maybe we will see some changes in the SDK in
 a later version. Read here more about it:
 <https://devzone.nordicsemi.com/f/nordic-q-a/69253/using-app_buttons-with-bsp-buttons-plus-own-buttons>
 
-![](.//media/image18.jpeg)After these changes to my app I was now able
-to ride along the Zwift track and when the incline was rising I was
+![](.//media/image18.jpeg)
+
+After these changes to my app I was now able to ride along the Zwift track and when the incline was rising I was
 increasing the resistance on my trainer by pressing "+" and afterwards
 pressing the "+" pushbutton connected to my nRF52-DK. The application
 would then react to that press by increasing or decreasing the global
@@ -975,8 +980,9 @@ peripherals. That PCB was basically fixed right behind the LCD matrix.
 
 ![](.//media/image19.png)
 
-![](.//media/image20.jpeg)The lower part of the whole construction was
-the PCB which was behind the push buttons and here everything looked
+![](.//media/image20.jpeg)
+
+The lower part of the whole construction was the PCB which was behind the push buttons and here everything looked
 pretty simple and there was next to no SMD component\! I was able to
 immediately spot the circuits that were related to the push buttons.
 When the device was powered the buttons were lit from behind by a small
@@ -992,8 +998,9 @@ were directly affected when the button was pressed. Once I pressed the
 button the resistance between the points E and F or B and C respectively
 where almost 0 Ohm and 7M Ohm in the unpressed state.
 
-![](.//media/image21.jpeg)The highest voltage I was able to measure in
-the area of interest was about 2.7V, which was an odd value, but at
+![](.//media/image21.jpeg)
+
+The highest voltage I was able to measure in the area of interest was about 2.7V, which was an odd value, but at
 least that meant that I would probably not have to cope with a 5V
 system, whereas the nRF 52 DK was only a 3.3V system. Apparently, no
 level shifting was needed\!
@@ -1002,8 +1009,9 @@ Another very odd thing that I encountered was that when the button was
 pressed the voltage between the two solder points was not actually 0V,
 e.g. connect to GND, like you might assume it was, but was about 1.2V.
 
-![](.//media/image22.png)That value is out of the range where it would
-be safely detected as a binary 0 or 1 (above V<sub>IL</sub> in the
+![](.//media/image22.png)
+
+That value is out of the range where it would be safely detected as a binary 0 or 1 (above V<sub>IL</sub> in the
 image), so in case I wanted to detect it with the nRF board I would need
 to have some ADC conversion and check on the measured voltage.
 
@@ -1012,8 +1020,9 @@ not so nice to permanently poll for the current voltage value. As far as
 I understood there was no interrupt that gets triggered when a certain
 value is read, just when a value *at all* was read.
 
-![](.//media/image23.png)But what was more irritating was that I was not
-sure what that would mean with respect to triggering an artificial
+![](.//media/image23.png)
+
+But what was more irritating was that I was not sure what that would mean with respect to triggering an artificial
 button press. Though I have some light experience with tinkering with
 microcontroller, much to my shame, I have to admit I am pretty clueless
 with electronic circuits and components on the physical level. I
@@ -1146,8 +1155,9 @@ long story short: Read you manuals and plan accordingly :-/
 
 ![](.//media/image26.png)
 
-![](.//media/image27.jpeg)To build my tiny circuit I needed to have some
-PCB where I could solder my components to. I didn’t want to have some
+![](.//media/image27.jpeg)
+
+To build my tiny circuit I needed to have some PCB where I could solder my components to. I didn’t want to have some
 “flying cabling” within the housing and the components potentially
 causing a short circuit. I was worried enough for overlooking something
 important and risking frying the PCB the first time I would issue a “Set
@@ -1316,8 +1326,9 @@ SDK and furthermore I wasn't able to find particularly much information
 in the web at first. It was spec reading time again\! But that was ok
 because I now was already used to it.
 
-![](.//media/image41.png)It turned out the FTMS comprised of quite a lot
-of characteristics. We had a feature characteristic again, an indoor
+![](.//media/image41.png)
+
+It turned out the FTMS comprised of quite a lot of characteristics. We had a feature characteristic again, an indoor
 bike data characteristic, a training status, and the control point.
 Thankfully, apart from the control point everything was pretty clear to
 me, and it was just a lot of work ahead of me, but not particularly
@@ -1690,8 +1701,9 @@ Thinking about how it felt in reality to shift gears on a bike, I came
 to the conclusion that a higher gear would make you faster but at the
 same time it was of course harder to pedal again and vice versa.
 
-![](.//media/image43.png)If you remember, back in the beginning of this
-write-up, I said I had that fixed value of 2.58 that was the factor
+![](.//media/image43.png)
+
+If you remember, back in the beginning of this write-up, I said I had that fixed value of 2.58 that was the factor
 between the crank revolutions and the wheel revolutions. Well, basically
 this was the gear ratio, right? And the gear ratio is of course
 influenced by the gears\! So, I thought I could just change that ratio
@@ -2114,8 +2126,9 @@ real professional device with a "feel good" factor.
 
 ![](.//media/image45.jpeg)
 
-![](.//media/image46.jpeg)You connect the probes to the device, plug in
-the USB cable, start the software and there you go. For the sampling of
+![](.//media/image46.jpeg)
+
+You connect the probes to the device, plug in the USB cable, start the software and there you go. For the sampling of
 the data you have multiple options. Just push the record button and get
 the data flowing for a certain time or until you press "Stop" or use the
 trigger to start the recording whenever you see a certain event on one
@@ -2158,15 +2171,17 @@ minimal data was send. Also, we see DC alternations during a time
 being sent. I think you agree this looked very strange. No wonder I got
 only noise on the display\!
 
-![](.//media/image49.jpeg)But I think you also get the picture here (pun
-intended\!): Without these insights what was weird, I would have spent a
+![](.//media/image49.jpeg)
+
+But I think you also get the picture here (pun intended\!): Without these insights what was weird, I would have spent a
 lot of time just trying around with different options and settings until
 I maybe finally found out by chance what was actually wrong with my
 code. Seeing here, that at the very least the sending of the DC signal
 was totally wrong immediately drives you into the correct direction\!
 
-![](.//media/image50.png)One of the most important features of a Logic
-Analyzer is of course to not only sample high speed data efficiently and
+![](.//media/image50.png)
+
+One of the most important features of a Logic Analyzer is of course to not only sample high speed data efficiently and
 cleanly on many channels but help you with interpreting the data. Humans
 are not very good at deciphering long sequences of high/low signals and
 transferring them from binary to something understandable – but software
@@ -2188,8 +2203,9 @@ maximum/minimum level, etc. etc. with additional calculations you need.
 The possibilities are many-fold and there is already a large number of
 user-provided plugins available that you can choose from\!
 
-![](.//media/image51.jpeg)To make a long story short – there were
-several errors with my code, that I was able to find using the Logic
+![](.//media/image51.jpeg)
+
+To make a long story short – there were several errors with my code, that I was able to find using the Logic
 software. The first and biggest mistake was that I was instantiating the
 completely wrong handler for that display controller. The u8g2 library
 features a large list of supported controllers with different protocols
@@ -2206,8 +2222,9 @@ with SPI of course. After this "face palm moment" and switching the
 driver's constructor, the signal looked instantly much more like SPI but
 I still had the DC thing wrong.
 
-![](.//media/image52.jpeg)For that it turned out that my code was
-anticipating that only one data byte is sent at a time. This was the
+![](.//media/image52.jpeg)
+
+For that it turned out that my code was anticipating that only one data byte is sent at a time. This was the
 right thing to do in the examples for TWI I first looked at, but for SPI
 it is self-evident to send multiple bytes at once, and this is also what
 the library does. But if my handler just *ignores* those additional
@@ -2269,8 +2286,9 @@ find the proper wires I might get the operating power for the nRF board
 as well. That would be super cool of course as I would no longer need to
 worry about how to power the board in the end\!
 
-![](.//media/image54.png)The next thing I want to do is of course
-properly integrate the OLED display and mount it to the board computer
+![](.//media/image54.png)
+
+The next thing I want to do is of course properly integrate the OLED display and mount it to the board computer
 somehow. I already made a couple of sketched with Fusion 360 so it is
 like a harness that I click on the board computer with a little mount
 for the OLED display. I am still a beginner with Fusion 360, so even
@@ -2282,8 +2300,11 @@ One problem with that design is, that it will be too big to fit on the
 base of my 3D printer so I will be forced to print it in two parts and
 then glue it together in the end.
 
-![](.//media/image55.png)![](.//media/image56.png) On the right side you
-see a small holder where I want to put the gear shifter. I decided to
+![](.//media/image55.png)
+
+![](.//media/image56.png) 
+
+On the right side you see a small holder where I want to put the gear shifter. I decided to
 move away from two separate buttons for shifting up and down and instead
 use a SPDT style OFF-ON-OFF rocker switch, so it returns to the neutral
 position on its own\! I bought a couple of models and the one I chose in
@@ -2372,8 +2393,9 @@ a trainer I was able to write a small parser in Python to decode the
 various messages for me and make the overall picture somewhat clearer to
 me.
 
-![](.//media/image60.png)The added benefit is that I should be able to
-use this FE-C then also from within Zwift which would give me an even
+![](.//media/image60.png)
+
+The added benefit is that I should be able to use this FE-C then also from within Zwift which would give me an even
 more accurate simulation than I have today. As mentioned earlier on
 during the description of the simulation parameters of FTMS and the
 corresponding FE-C parts, there is this aspect of drafting where the
