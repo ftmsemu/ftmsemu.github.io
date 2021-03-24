@@ -381,8 +381,9 @@ Revolutions* value is required, see Section 3.4.2.1 for requirements
 related to setting the value of this field. The *Last Wheel Event Time*
 value rolls over every 64 seconds.
 
-![](.//media/image9.png)Nice, huh? Well, actually, it is not *that* hard
-to understand and as I already mentioned the provided examples in the
+![](.//media/image9.png)
+
+Nice, huh? Well, actually, it is not *that* hard to understand and as I already mentioned the provided examples in the
 SDK are very helpful here, because there is the CSCS peripheral service
 available, i.e., a simulated CSCS sensor. By using the NRF Connect app
 with the debugger of your IDE (the nRF52 DK has an embedded SEGGER
@@ -567,8 +568,9 @@ into the app. At that time, I thought "Well, level 20 is surely more
 than enough. I actually never rode on a level higher than 14 or 16". How
 wrong I would be with that assumption, I did not know yet :-D
 
-![](.//media/image12.png)From that moment on I was able to send the
-produced wattage based on my received cadence readings and could
+![](.//media/image12.png)
+
+From that moment on I was able to send the produced wattage based on my received cadence readings and could
 basically also sent it to the game… In theory… There was just a slight
 problem. The CSCS did not have any means of sending this kind of detail.
 It was about *speed* and *cadence* and nothing else\! And – this should
@@ -805,8 +807,9 @@ and could actually deliver "higher level" events to the application like
 pressed", "button has been toggled (pressed and released)". This was
 exactly what I was looking for\!
 
-![](.//media/image17.jpeg)I basically wanted to go for the "button has
-been toggled" event. The problem is that the code in the SDK was not
+![](.//media/image17.jpeg)
+
+I basically wanted to go for the "button has been toggled" event. The problem is that the code in the SDK was not
 developed in such a way that you can easily add more buttons than the
 ones physically present on the board already. That means – if you want
 to keep the already provided functionality to wake up the board, reset
@@ -1214,8 +1217,9 @@ for GND), so I was able to save some precious space there as well.
 
 ![](.//media/image35.png) ![](.//media/image36.png)
 
-![](.//media/image37.jpeg)I thought a while how short I wanted
-everything to cut and decided to leave some space with everything just
+![](.//media/image37.jpeg)
+
+I thought a while how short I wanted everything to cut and decided to leave some space with everything just
 in case there would ever be some problem with one of the wires and I
 would have to cut something or resolder. The wires that exit the housing
 are fixed into some Wago clips and only from there the wires are then
@@ -1895,8 +1899,11 @@ Of course, I would not have the space on my trainer to fix a big TFT and
 using such a big screen would also contradict the idea to power it
 autonomously. Instead, I was looking for a quite tiny screen and found
 out, that OLED displays became quite common, cheap and power efficient
-over the past few years\! I already ![](.//media/image44.png)owned some
-7" HDMI displays from Waveshare (a Chinese manufacturer) I used for my
+over the past few years\! 
+
+![](.//media/image44.png)
+
+I already owned some 7" HDMI displays from Waveshare (a Chinese manufacturer) I used for my
 Raspberry Pis. Waveshare also had all kind of OLED displays in
 black/white, grey scale and even 16 bit color that you could use with an
 Arduino – or any other microcontroller for that matter. The size of the
@@ -1918,7 +1925,7 @@ have to deliver the frame buffers to the display controller, set all
 kind of parameters and initialize everything before you can even set a
 single pixel or write a text to the display. Luckily, you don't have to
 start at zero here. There is this awesome graphics library called u8g2
-on GitHub (https://github.com/olikraus/u8g2), which is a ready-to-use
+on GitHub (<https://github.com/olikraus/u8g2>), which is a ready-to-use
 library for Arduino and that supports a large range of display
 controllers, among those that are used on those Waveshare devices.
 
@@ -2229,8 +2236,11 @@ right thing to do in the examples for TWI I first looked at, but for SPI
 it is self-evident to send multiple bytes at once, and this is also what
 the library does. But if my handler just *ignores* those additional
 bytes and only sends the first one, it is evident the overall sequence
-looked very wrong. Several facepalms later I
-![](.//media/image53.jpeg)managed to get it right and finally saw a nice
+looked very wrong.
+
+![](.//media/image53.jpeg)
+
+ Several facepalms later I managed to get it right and finally saw a nice
 "Hello world" string displayed on my OLED. From that moment on I could
 forget about "porting" the library and concentrate on the actual usage
 of it. I made a quick layout for all relevant data to be displayed and
