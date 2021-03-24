@@ -2077,7 +2077,7 @@ much, if you do not use the device at all then.
 
 Once you ignore all those advertisements for the cheap gadgets you will
 inevitable stumble over another product name and I can only recommend to
-have a look at it. It is the "Logic" from Saleae (http://www.saleae.com>). I have known that
+have a look at it. It is the "Logic" from Saleae (https://www.saleae.com). I have known that
 company name and its reputation for many years already. Saleae produces
 a very professional device and bundles it with an awesome software for
 the analysis. You can choose between two 8 input variants and one
