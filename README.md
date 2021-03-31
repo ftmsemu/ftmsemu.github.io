@@ -2,17 +2,15 @@
 
 # Contents
 
-[Part 1: The start of a journey 1](#part-1-the-start-of-a-journey)
+[Part 1: The start of a journey](#part-1-the-start-of-a-journey)
 
-[Part 2: I've got the power 9](#part-2-ive-got-the-power)
+[Part 2: I've got the power](#part-2-ive-got-the-power)
 
-[Part 3: Interfacing all the things\!Saleae
-16](#part-3-interfacing-all-the-things)
+[Part 3: Interfacing all the things](#part-3-interfacing-all-the-things)
 
-[Part 4: Give it back to me\! – Remote controlling via FTMS
-24](#part-4-give-it-back-to-me-remote-controlling-via-ftms)
+[Part 4: Give it back to me\! – Remote controlling via FTMS](#part-4-give-it-back-to-me-remote-controlling-via-ftms)
 
-[Part 5: What's left? 39](#part-5-whats-left)
+[Part 5: What's left?](#part-5-whats-left)
 
 # Part 1: The start of a journey
 
@@ -26,7 +24,7 @@ during various CTF events where we competed in.
 The parcel contained a microcontroller board. A
 nRF52 DK (
 https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52-DK)
-from Nordic Semiconductor which is equipped with a nRF52382 ARM Cortex
+from Nordic Semiconductor which is equipped with a nRF52832 ARM Cortex
 M4 core. Nordic is best known for their excellent Bluetooth and ANT
 support in their chips. Luca worked with these chips some years ago
 during a project at work and had some spare board and challenged me to
