@@ -67,7 +67,7 @@ the Electron framework. There's also a version for iOS and Android
 though that one is to be used a little bit differently and due to the
 iOS Bluetooth foundation, not all features can be used the same way as
 on Windows for example. NRF Connect shows its real power when you have
-another Nordic device, like for example a nRF52480 Dongle
+another Nordic device, like for example a nRF52840 Dongle
 (<https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52840-Dongle>),
 that you can use as a client (or server\!) and connect to your app, that
 runs on the DK. Due to the interactivity of the tool you can for example
