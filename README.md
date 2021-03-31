@@ -249,7 +249,7 @@ I felt a big rock falling from my heart because that meant I could
 continue my project in high hopes.
 
 Funnily enough while investigating the services of the cheapo sensor, I
-noticed that it seemed to be built around a Nordic nRF chip tool, well
+noticed that it seemed to be built around a Nordic nRF chip too, well
 at least some Nordic specific Bluetooth services were exposed like OTA
 ("Over the air") firmware update and so on. Well, even on good hardware
 – if the software you write is \*\*\* you have no joy… By the way,
