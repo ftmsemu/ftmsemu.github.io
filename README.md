@@ -801,7 +801,7 @@ Unfortunately, my pushbutton was of course not equipped with such a
 filter so I had to find a solution here. Much to my joy I read that the
 appbutton library of the nRF SDK already had this debouncing built in
 and could actually deliver "higher level" events to the application like
-"button was pressed down", "button was release", "button is kept
+"button was pressed down", "button was released", "button is kept
 pressed", "button has been toggled (pressed and released)". This was
 exactly what I was looking for\!
 
