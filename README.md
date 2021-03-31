@@ -25,7 +25,7 @@ The parcel contained a microcontroller board. A
 nRF52 DK (
 https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52-DK)
 from Nordic Semiconductor which is equipped with a nRF52832 ARM Cortex
-M4 core. Nordic is best known for their excellent Bluetooth and ANT
+M4 core. Nordic is best known for their excellent Bluetooth and ANT/ANT+
 support in their chips. Luca worked with these chips some years ago
 during a project at work and had some spare board and challenged me to
 have a look at them, as he thought I could have a lot of fun with them.
